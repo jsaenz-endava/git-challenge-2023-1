@@ -1,6 +1,15 @@
-# **What is Gitflow?**
+# **Content**
 
-[hola](./test.md)
+This tutorial will show you the basics about GitFlow and its usage in the software development process.
+
+1. What is GitFlow and getting started (_here_)
+2. [`Develop` and `main` branches](./)
+3. [`Features` branches](./)
+4. [`Release` branches](./)
+5. [`Hotfix` branches](./)
+6. [A summary of GitFlow](./)
+
+## **What is Gitflow?**
 
 Gitflow is an alternative Git branching model that involves the use of feature branches and multiple primary branches. It was first published and made popular by [Vincent Driessen at nvie](http://nvie.com/posts/a-successful-git-branching-model/). Under this model, developers create a feature branch and delay merging it to the main trunk branch until the feature is complete. These long-lived feature branches require more collaboration to merge and have a higher risk of deviating from the trunk branch. They can also introduce conflicting updates.
 
@@ -55,3 +64,9 @@ But there's another option to use Gitflow that can be more easier in terms of wr
 After this, you can type the first command that allows you to initialize the repository with the Gitworkflow configuration : `git flow init` that is and extension for the command `git init`, so you can create new branches, etc, more easily.
 
 In the next tutorials, you'll see how to work with this flow using Gitflow using basic git commands and the "new" git-flow commands. 
+
+----
+
+<small>Written by: Angel Mateo Gonzalez Bejarano, Endava. 2023.</small>
+
+
