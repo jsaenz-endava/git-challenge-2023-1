@@ -34,7 +34,18 @@ $ git flow release start 0.1.0
 Switched to a new branch 'release/0.1.0'
 ```
 
-Once the release is ready to ship, it will get merged it into `main` and `develop`, then the `release` branch will be deleted. It’s important to merge back into `develop` because critical updates may have been added to the `release` branch and they need to be accessible to new features. If your organization stresses code review, this would be an ideal place for a pull request.
+All this looks something like:
+```mermaid
+gitGraph
+    commit
+    branch develop
+    commit
+    commit
+    branch release/0.1.0
+    commit id: "first release" type: HIGHLIGHT
+```
+
+Once the release is ready to ship, it will get merged it into `main` and `develop`, then the `release` branch will be deleted. It’s important to merge back into `develop` because critical updates may have been added to the `release` branch and they need to be accessible to new features.
 
 To finish a release branch, use the following methods:
 
@@ -50,95 +61,21 @@ Or with the `git-flow` extension:
 git flow release finish '0.1.0'
 ```
 
-
-    
-```mermaid
-gitGraph
-    commit
-    branch develop
-    commit
-```
-
-
-
-ejemplo
-
-```mermaid
-gitGraph
-    commit
-    branch develop
-    commit
-    branch feature_branch_01
-    commit
-    commit
-    checkout develop
-    branch feature_branch_02
-    commit
-    commit
-```
-
-ejemplo
-
-```mermaid
-    gitGraph
-    commit
-    branch develop
-    commit
-    branch feature_branch_01
-    commit
-    commit
-    checkout develop
-    branch feature_branch_02
-    commit
-    commit
-    checkout develop
-    merge feature_branch_01
-    merge feature_branch_02
-```
-
-
+And that looks a bit like the following:
 ```mermaid
     gitGraph
     commit
     branch develop
     commit
     commit
-    branch release
-    commit
+    branch release/0.1.0
+    commit id: "first release" type: HIGHLIGHT
     checkout main
-    merge release
+    merge release/0.1.0
     checkout develop
-    merge release
+    merge release/0.1.0
 ```
 
-
-```mermaid
-    gitGraph
-    commit
-    commit
-    branch hotfix_branch
-    commit
-    commit
-    commit
-```
-
-
-```mermaid
-    gitGraph
-    branch develop
-    commit
-    checkout main
-    commit
-    commit
-    branch hotfix_branch
-    commit
-    commit
-    commit
-    checkout main
-    merge hotfix_branch
-    checkout develop
-    merge hotfix_branch
-```
 
 _Note_: 
 
