@@ -82,5 +82,3 @@ In summary, the key features of the `git-flow` `release` branch are:
 - The `release` branch is the shortest lived of all `git-flow` branches.
 
 ----
-
-###### Written by: Luz Mariana Pulido Arcia, Endava. 2023.
