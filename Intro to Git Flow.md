@@ -7,7 +7,7 @@ This tutorial will show you the basics about GitFlow and its usage in the softwa
 3. [`Features` branches](./)
 4. [`Release` branches](./)
 5. [`Hotfix` branches](./)
-6. [A summary of GitFlow](./)
+6. [A summary of GitFlow](./A%20Summary%20of%20Git%20Flow.md)
 
 ## **What is Gitflow?**
 
@@ -20,7 +20,6 @@ The following diagram can show a GitFlow:
 ```mermaid
 gitGraph
    commit
-   branch release
    branch develop
    commit
    branch feature_01
@@ -34,19 +33,19 @@ gitGraph
    commit
    checkout develop
    merge feature_01
-   checkout release
-   merge develop
-   checkout feature_02
-   commit
-   checkout develop
    merge feature_02
-   checkout release
-   merge develop
-   checkout develop
+   branch release
+   commit
    checkout main
    merge release
+   checkout develop
+   merge release
    checkout main
+   commit
+   commit
    branch hotfix
+   commit
+   commit
    commit
    checkout develop
    merge hotfix
@@ -67,6 +66,7 @@ In the next tutorials, you'll see how to work with this flow using Gitflow using
 
 ----
 
-<small>Written by: Angel Mateo Gonzalez Bejarano, Endava. 2023.</small>
+###### Written by: Angel Mateo Gonzalez Bejarano, Endava. 2023.
+
 
 
