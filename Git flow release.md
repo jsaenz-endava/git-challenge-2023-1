@@ -14,8 +14,6 @@ The `git-flow` `release` branch has the shortest lifespan of all the `git-flow` 
 
 In more detail, the idea is to fork a `release` branch off of `develop`. Creating this branch starts the next release cycle, so no new features can be added after this point. The only changes in this branch should only be bug fixes, documentation generation, and other release-oriented tasks. Meaning no new development is allowed to happen on the `git-flow` `release` branch. When created, the only commits made to this branch should be for bug fixes and urgently necessary chores. No feature development is allowed. Once it's ready to ship, the `release` branch gets merged into `main` and tagged with a version number. In addition, it should be merged back into `develop`, which may have progressed since the release was initiated.
 
-**Gráfica de creación**-**Gráfica de cierre**
-
 Using a dedicated branch to prepare releases makes it possible for one team to polish the current release while another team continues working on features for the next release, which is especially convenient when working with agile methodologies. It also creates well-defined phases of development to keep everybody in the same track (e.g., it's easy to say, “This week we're preparing for version 4.0,” and to actually see it in the structure of the repository).
 
 Making `release` branches is a straightforward branching operation. Like `feature` branches, release branches are based on the `develop` branch. A new `release` branch can be created using the following methods.
