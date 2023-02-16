@@ -75,9 +75,13 @@ And that looks a bit like the following:
     checkout develop
     merge release/0.1.0
 ```
+In summary, the key features of the `git-flow` `release` branch are:
 
-
-_Note_: 
+- The `release` branch represents a complete feature set.
+- The only commits on the `release` branch are for bug fixes and important chores.
+- The `git-flow` release branch is created off the `development` branch.
+- `git-flow` `release` is merged into `master` and also back into `development`.
+- The `release` branch is the shortest lived of all `git-flow` branches.
 
 ----
 
