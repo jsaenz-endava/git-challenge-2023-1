@@ -12,7 +12,8 @@
 
 Maintenance or “`hotfix`” branches are used to quickly patch production releases. `Hotfix` branches are a lot like `release` branches and `feature` branches except they're based on `main` instead of `develop`. This is the only branch that should fork directly off of `main`. As soon as the fix is complete, it should be merged into both `main` and `develop` (or the current release branch), and `main` should be tagged with an updated version number.
 
-Having a dedicated line of development for bug fixes lets your team address issues without interrupting the rest of the workflow or waiting for the next release cycle. You can think of maintenance branches as ad hoc `release` branches that work directly with `main`. A `hotfix` branch can be created using the following methods:
+Having a dedicated line of development for bug fixes allows the team a place to address issues without interrupting the rest of the workflow or waiting for the next release cycle. A maintenance branch can be 
+thought as an ad hoc `release` branche that works directly with `main`. A `hotfix` branch can be created using the following methods:
 
 Without the `git-flow` extensions:
 ```bash
@@ -23,13 +24,13 @@ When using the `git-flow` extensions:
 ```bash
 $ git flow hotfix start hotfix_branch
 ```
-Which would look somthing like this in the git graph:
+Which would look something like this in the git graph:
 ```mermaid
     gitGraph
     commit
     commit
     branch hotfix_branch
-    commit
+    commit id: "First hotfix" type: HIGHLIGHT
     commit
     commit
 ```
@@ -43,7 +44,7 @@ git merge hotfix_branch
 git branch -D hotfix_branch
 $ git flow hotfix finish hotfix_branch
 ```
-Similarly, the graphic representation of a `hotfix` branch is along the following:  
+So the graphic representation of a `hotfix` branch lifecycle is along the following:  
 
 ```mermaid
     gitGraph
@@ -55,7 +56,7 @@ Similarly, the graphic representation of a `hotfix` branch is along the followin
     branch hotfix_branch
     commit
     commit
-    commit
+    commit id: "Last hotfix" type: HIGHLIGHT
     checkout main
     merge hotfix_branch
     checkout develop
