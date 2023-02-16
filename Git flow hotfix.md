@@ -23,6 +23,17 @@ When using the `git-flow` extensions:
 ```bash
 $ git flow hotfix start hotfix_branch
 ```
+Which would look somthing like this in the git graph:
+```mermaid
+    gitGraph
+    commit
+    commit
+    branch hotfix_branch
+    commit
+    commit
+    commit
+```
+
 Similar to finishing a `release `branch, a `hotfix` branch gets merged into both `main` and `develop`.
 ```bash
 git checkout main
@@ -32,8 +43,24 @@ git merge hotfix_branch
 git branch -D hotfix_branch
 $ git flow hotfix finish hotfix_branch
 ```
+Similarly, the graphic representation of a `hotfix` branch is along the following:  
 
-_Note_: 
+```mermaid
+    gitGraph
+    branch develop
+    commit
+    checkout main
+    commit
+    commit
+    branch hotfix_branch
+    commit
+    commit
+    commit
+    checkout main
+    merge hotfix_branch
+    checkout develop
+    merge hotfix_branch
+```
 
 ----
 
