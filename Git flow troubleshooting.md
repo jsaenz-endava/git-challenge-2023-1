@@ -44,4 +44,11 @@ The conflict itself can be resolve manually, in this case you could download the
  git checkout <feature_branch>
  git pull origin develop 
 ```
-Here, another merge conflict can occour if you are modifing files already merged into `Develop` branch. To solve that, you must do it manually, comparing files. If not, you can continue as normaly.  
+Here, another merge conflict can occour if you are modifing files already merged into `Develop` branch. To solve that, you must do it manually, comparing files. If not, you can continue as normaly.
+
+## Incorrect naming a branch
+Lets say you named the `Feature` branch as _GC03Develop_and_main_branches_ but had to be _feature/GC03Develop_and_main_branches_, you just created a lot of files and modifed a couple others and you're ready to push the whole thing to your remote depo but then realize your mistake. You could stash, delete the branch and create a new one or simply do:
+
+```bash
+ git branch -m <old_name> <newname>
+```
