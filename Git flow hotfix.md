@@ -64,4 +64,3 @@ So the graphic representation of a `hotfix` branch lifecycle is along the follow
 ```
 
 ----
-###### Written by: Luz Mariana Pulido Arcia, Endava. 2023.

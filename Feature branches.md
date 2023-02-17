@@ -89,8 +89,3 @@ Should look something like this
     checkout develop
     merge feature_branch
 ```
-
-
-
-
-###### Written by: Jamel Castillo Mejía, Endava. 2023.
