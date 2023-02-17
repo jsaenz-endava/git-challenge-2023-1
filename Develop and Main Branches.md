@@ -52,6 +52,3 @@ Either way should initialize or workflow as follows
     branch develop
     commit
 ```
-
-###### Written by: Jamel Castillo Mejía, Endava. 2023.
-
