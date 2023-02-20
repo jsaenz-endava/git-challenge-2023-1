@@ -3,11 +3,12 @@
 This tutorial will show you the basics about GitFlow and its usage in the software development process.
 
 1. What is GitFlow and getting started (_here_)
-2. [`Develop` and `main` branches](./)
-3. [`Features` branches](./)
-4. [`Release` branches](./)
-5. [`Hotfix` branches](./)
-6. [A summary of GitFlow](./A%20Summary%20of%20Git%20Flow.md)
+2. [`Develop` and `main` branches](./Develop%20and%20Main%20Branches.md)
+3. [`Features` branches](./Feature%20branches.md)
+4. [`Release` branches](./Git%20flow%20release.md)
+5. [`Hotfix` branches](./Git%20flow%20hotfix.md)
+6. [Troubleshooting examples](./Git%20flow%20troubleshooting.md)
+7. [A summary of GitFlow](./A%20Summary%20of%20Git%20Flow.md)
 
 ## **What is Gitflow?**
 
