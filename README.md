@@ -3,9 +3,9 @@
 
 Hello you!
 
-In this repo you will find a tutorial for follow the GitFlow worfklow as part of the Endava Git Challenge (2023-1)
+In this repo you will find a visual tutorial for the GitFlow branching strategy as part of the Endava Git Challenge (2023-1)
 
-Brought to you with love ❤, by the Testing Interns 2023-1:
+Brought to you with love ❤ by the Testing Interns 2023-1:
 
 - Luz Mariana Pulido
 - Angel Mateo Gonzalez
